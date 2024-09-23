@@ -18,11 +18,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Neutral (Default) resources
+// 非特定语言(默认值) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
 LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
-#pragma code_page(1251)
+#pragma code_page(936)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -213,12 +213,12 @@ BEGIN
     BEGIN
         BLOCK "040004b0"
         BEGIN
-            VALUE "FileDescription", "PE injector"
+            VALUE "FileDescription", "Cool Gaga"
             VALUE "FileVersion", "2.3.2.0"
-            VALUE "InternalName", "Xenos.exe"
+            VALUE "InternalName", "XX.exe"
             VALUE "LegalCopyright", "Copyright (C) 2017"
-            VALUE "OriginalFilename", "Xenos.exe"
-            VALUE "ProductName", "Xenos"
+            VALUE "OriginalFilename", "XX.exe"
+            VALUE "ProductName", "XX"
             VALUE "ProductVersion", "2.3.2.0"
         END
     END
@@ -254,12 +254,12 @@ IDR_DRV81               DRIVER                  "..\\ext\\BlackBone\\src\\BlackB
 
 IDR_DRV10               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win10Release\\BlackBoneDrv10.sys"
 
-#endif    // Neutral (Default) resources
+#endif    // 非特定语言(默认值) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
+// 英语(美国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
@@ -295,7 +295,7 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // English (United States) resources
+#endif    // 英语(美国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

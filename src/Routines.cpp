@@ -340,11 +340,11 @@ void MainDlg::AddToModuleList( std::shared_ptr<blackbone::pe::PEImage>& img )
 
     // Module platform
     if (img->mType() == blackbone::mt_mod32)
-        platfom = L"32 bit";
+        platfom = std::wstring(L"32 bit").data();
     else if (img->mType() == blackbone::mt_mod64)
-        platfom = L"64 bit";
+        platfom = std::wstring(L"64 bit").data();
     else
-        platfom = L"Unknown";
+        platfom = std::wstring(L"Unknown").data();
 
     _images.emplace_back( img );
     _modules.AddItem( blackbone::Utils::StripPath( img->path() ), 0, { platfom } );
