@@ -163,16 +163,6 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDI_ICON1               ICON                    "alien.ico"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Menu
 //
 
@@ -213,12 +203,12 @@ BEGIN
     BEGIN
         BLOCK "040004b0"
         BEGIN
-            VALUE "FileDescription", "Cool Gaga"
+            VALUE "FileDescription", "U.S. Baby"
             VALUE "FileVersion", "2.3.2.0"
-            VALUE "InternalName", "XX.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2017"
-            VALUE "OriginalFilename", "XX.exe"
-            VALUE "ProductName", "XX"
+            VALUE "InternalName", "USB.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2024"
+            VALUE "OriginalFilename", "USB.exe"
+            VALUE "ProductName", "USB"
             VALUE "ProductVersion", "2.3.2.0"
         END
     END
@@ -246,15 +236,35 @@ END
 // DRIVER
 //
 
-IDR_DRV7                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win7Release\\BlackBoneDrv7.sys"
+IDR_DRV7                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win7Release\\BabyDrv7.sys"
 
-IDR_DRV8                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8Release\\BlackBoneDrv8.sys"
+IDR_DRV8                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8Release\\BabyDrv8.sys"
 
-IDR_DRV81               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8.1Release\\BlackBoneDrv81.sys"
+IDR_DRV81               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8.1Release\\BabyDrv81.sys"
 
-IDR_DRV10               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win10Release\\BlackBoneDrv10.sys"
+IDR_DRV10               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win10Release\\BabyDrv10.sys"
 
 #endif    // 非特定语言(默认值) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "E:\\WorkSpace\\MyGit\\Xenos\\icon\\girl1_128x128.ico"
+
+#endif    // 中文(简体，中国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

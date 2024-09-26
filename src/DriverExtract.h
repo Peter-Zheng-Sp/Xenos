@@ -4,6 +4,11 @@
 #include <BlackBone/src/3rd_Party/VersionApi.h>
 #include <BlackBone/src/BlackBone/DriverControl/DriverControl.h>
 
+#define BB_DRIVER_NAME_WIN7   L"BabyDrv7.sys"
+#define BB_DRIVER_NAME_WIN8   L"BabyDrv8.sys"
+#define BB_DRIVER_NAME_WIN81  L"BabyDrv81.sys"
+#define BB_DRIVER_NAME_WIN10  L"BabyDrv10.sys"
+
 class DriverExtract
 {
 public:
@@ -19,21 +24,21 @@ public:
     void Extract()
     {
         int resID = IDR_DRV7;
-        const wchar_t* filename = L"BlackBoneDrv7.sys";
+        const wchar_t* filename = BB_DRIVER_NAME_WIN7;
 
         if (IsWindows10OrGreater())
         {
-            filename = L"BlackBoneDrv10.sys";
+            filename = BB_DRIVER_NAME_WIN10;
             resID = IDR_DRV10;
         }
         else if (IsWindows8Point1OrGreater())
         {
-            filename = L"BlackBoneDrv81.sys";
+            filename = BB_DRIVER_NAME_WIN81;
             resID = IDR_DRV81;
         }
         else if (IsWindows8OrGreater())
         {
-            filename = L"BlackBoneDrv8.sys";
+            filename = BB_DRIVER_NAME_WIN8;
             resID = IDR_DRV8;
         }
 
@@ -67,14 +72,14 @@ public:
     /// </summary>
     void Cleanup()
     {
-        const wchar_t* filename = L"BlackBoneDrv7.sys";
+        const wchar_t* filename = BB_DRIVER_NAME_WIN7;
 
         if (IsWindows10OrGreater())
-            filename = L"BlackBoneDrv10.sys";
+            filename = BB_DRIVER_NAME_WIN10;
         else if (IsWindows8Point1OrGreater())
-            filename = L"BlackBoneDrv81.sys";
+            filename = BB_DRIVER_NAME_WIN81;
         else if (IsWindows8OrGreater())
-            filename = L"BlackBoneDrv8.sys";
+            filename = BB_DRIVER_NAME_WIN8;
 
         DeleteFileW( (blackbone::Utils::GetExeDirectory() + L"\\" + filename).c_str() );
     }

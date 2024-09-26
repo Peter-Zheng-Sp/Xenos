@@ -1,13 +1,12 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ generated include file.
-// Used by Xenos.rc
+// Microsoft Visual C++ 生成的包含文件。
+// 供 Xenos.rc 使用
 //
 #define IDC_MYICON                      2
 #define IDD_WIN32_TEMPLATE_DIALOG       102
 #define IDM_ABOUT                       104
 #define IDR_MAINFRAME                   128
 #define IDD_MAIN                        129
-#define IDI_ICON1                       135
 #define IDD_MODULES                     137
 #define IDR_MENU_MAIN                   138
 #define IDD_WAIT_PROC                   139
@@ -18,6 +17,7 @@
 #define IDR_DRV81                       149
 #define IDR_DRIVER1                     150
 #define IDR_DRV10                       150
+#define IDI_ICON1                       154
 #define IDC_EDIT_MAIN                   1000
 #define IDC_EXECUTE                     1001
 #define IDC_COMBO_PROC                  1002
@@ -77,7 +77,7 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        151
+#define _APS_NEXT_RESOURCE_VALUE        155
 #define _APS_NEXT_COMMAND_VALUE         32780
 #define _APS_NEXT_CONTROL_VALUE         1032
 #define _APS_NEXT_SYMED_VALUE           110
