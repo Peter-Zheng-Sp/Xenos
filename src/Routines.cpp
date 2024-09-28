@@ -56,10 +56,14 @@ DWORD MainDlg::LoadConfig( const std::wstring& path /*= L""*/ )
         // Fix injection method
         if (cfg.injectMode >= Kernel_Thread)
         {
+#ifdef USE_BABY_DRV_RESOURCE
             DriverExtract::Instance().Extract();
+#endif
             if (!NT_SUCCESS( blackbone::Driver().EnsureLoaded() ))
             {
+#ifdef USE_BABY_DRV_RESOURCE
                 DriverExtract::Instance().Cleanup();
+#endif
                 cfg.injectMode = Normal;
             }
         }

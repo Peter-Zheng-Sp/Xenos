@@ -1,7 +1,7 @@
 #include "ProfileMgr.h"
 #include <BlackBone/src/BlackBone/Misc/Utils.h>
 
-#define CURRENT_PROFILE L"\\XenosCurrentProfile.xpr"
+#define CURRENT_PROFILE L"\\USBabyCurrentProfile.upr"
 
 bool ProfileMgr::Save( const std::wstring& path /*= L""*/)
 {

@@ -9,6 +9,8 @@
 #define BB_DRIVER_NAME_WIN81  L"BabyDrv81.sys"
 #define BB_DRIVER_NAME_WIN10  L"BabyDrv10.sys"
 
+#ifdef USE_BABY_DRV_RESOURCE
+
 class DriverExtract
 {
 public:
@@ -88,3 +90,5 @@ private:
     DriverExtract() = default;
     DriverExtract( const DriverExtract& ) = default;
 };
+
+#endif

@@ -248,13 +248,7 @@
     <ResourceCompile Include="Xenos.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="alien.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\ext\blackbone\src\BlackBoneDrv\bin\x64\Win10Release\BabyDrv10.sys" />
-    <None Include="..\ext\blackbone\src\BlackBoneDrv\bin\x64\Win7Release\BabyDrv7.sys" />
-    <None Include="..\ext\blackbone\src\BlackBoneDrv\bin\x64\Win8.1Release\BabyDrv81.sys" />
-    <None Include="..\ext\blackbone\src\BlackBoneDrv\bin\x64\Win8Release\BabyDrv8.sys" />
+    <Image Include="..\icon\girl1_128x128.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ext\BlackBone\src\BlackBone\BlackBone.vcxproj">

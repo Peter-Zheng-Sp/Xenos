@@ -12,11 +12,7 @@
 #define IDD_WAIT_PROC                   139
 #define IDD_SETTINGS                    140
 #define IDR_ACCELERATOR1                141
-#define IDR_DRV7                        142
-#define IDR_DRV8                        147
-#define IDR_DRV81                       149
 #define IDR_DRIVER1                     150
-#define IDR_DRV10                       150
 #define IDI_ICON1                       154
 #define IDC_EDIT_MAIN                   1000
 #define IDC_EXECUTE                     1001

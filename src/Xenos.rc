@@ -32,7 +32,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
 IDD_MAIN DIALOGEX 0, 0, 221, 209
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
 EXSTYLE WS_EX_ACCEPTFILES
-CAPTION "Xenos"
+CAPTION "USBaby"
 MENU IDR_MENU_MAIN
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
@@ -229,20 +229,6 @@ BEGIN
     "O",            ID_ACCEL_OPEN,          VIRTKEY, CONTROL, NOINVERT
     "S",            ID_ACCEL_SAVE,          VIRTKEY, CONTROL, NOINVERT
 END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// DRIVER
-//
-
-IDR_DRV7                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win7Release\\BabyDrv7.sys"
-
-IDR_DRV8                DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8Release\\BabyDrv8.sys"
-
-IDR_DRV81               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win8.1Release\\BabyDrv81.sys"
-
-IDR_DRV10               DRIVER                  "..\\ext\\BlackBone\\src\\BlackBoneDrv\\bin\\x64\\Win10Release\\BabyDrv10.sys"
 
 #endif    // 非特定语言(默认值) resources
 /////////////////////////////////////////////////////////////////////////////

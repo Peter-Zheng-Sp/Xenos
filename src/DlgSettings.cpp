@@ -110,13 +110,16 @@ DWORD DlgSettings::HandleDriver( uint32_t type )
     if (type < Kernel_Thread)
         return STATUS_SUCCESS;
 
+#ifdef USE_BABY_DRV_RESOURCE
     DriverExtract::Instance().Extract();
+#endif
+
     auto status = blackbone::Driver().EnsureLoaded();
 
     // Try to enable test signing
     if (!NT_SUCCESS( status ))
     {
-        auto text = L"Failed to load BlackBone driver:\n\n" + blackbone::Utils::GetErrorDescription( status );
+        auto text = L"Failed to load BabyDrv driver:\n\n" + blackbone::Utils::GetErrorDescription( status );
         Message::ShowError( _hwnd, text );
 
         // Detect test signing
@@ -154,7 +157,9 @@ DWORD DlgSettings::HandleDriver( uint32_t type )
         }
 
         // Revert selection
+#ifdef USE_BABY_DRV_RESOURCE
         DriverExtract::Instance().Cleanup();
+#endif
         _injectionType.selection( _lastSelected );
     }
 

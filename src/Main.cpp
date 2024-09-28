@@ -28,13 +28,13 @@ void AssociateExtension()
     GetModuleFileNameW( NULL, tmp, sizeof( tmp ) );
 
 #ifdef USE64
-    std::wstring ext = L".xpr64";
-    std::wstring alias = L"XenosProfile64";
-    std::wstring desc = L"Xenos 64-bit injection profile";
+    std::wstring ext = L".upr64";
+    std::wstring alias = L"USBabyProfile64";
+    std::wstring desc = L"USBaby 64-bit injection profile";
 #else
-    std::wstring ext = L".xpr";
-    std::wstring alias = L"XenosProfile";
-    std::wstring desc = L"Xenos injection profile";
+    std::wstring ext = L".upr";
+    std::wstring alias = L"USBabyProfile";
+    std::wstring desc = L"USBaby injection profile";
 #endif 
     std::wstring editWith = std::wstring( tmp ) + L" --load %1";
     std::wstring runWith = std::wstring( tmp ) + L" --run %1";
